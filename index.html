@@ -1,71 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaymeet Nagar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaymeet Nagar</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/mediaqueries.css" />
-</head>
-
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Jaymeet Nagar</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Jaymeet Nagar</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jaymeet Nagar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jaymeet Nagar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section id="profile">
-    <div>
-      <img src="./assets/profile-pic.png" alt="Jaymeet Profile Pic" class="profile-pic" />
-    </div>
-    <div class="section-content">
-      <p>Hello, I'm</p>
-      <h1 class="title">Jaymeet Nagar</h1>
-      <p>Full Stack Developer</p>
-      <p>Passionate about building web applications and solving problems.</p>
-      <div class="btn-container">
-        <button class="btn" onclick="window.open('assets/JaymeetNagarResume.pdf')">
-          Download Resume
-        </button>
-        <button class="btn" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Jaymeet Profile Picture"
+          class="profile-pic"
+        />
       </div>
-      <div class="social">
-        <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
-          onclick="window.open('https://www.linkedin.com/in/jaymeetnagar/')" />
 
-        <img src="./assets/github.png" alt="My Github Repository" class="icon"
-          onclick="window.open('https://github.com/jaymeetnagar')" />
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jaymeet Nagar</h1>
+        <p class="section__text__p2">Building creative user experiences.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/JaymeetNagarResume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/jaymeetnagar/')"
+          />
+
+          <a href="https://www.linkedin.com/in/jaymeetnagar/" target="_blank" class="contact-icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+          <img
+            src="./assets/github.png"
+            alt="My Github Repository"
+            class="icon"
+            onclick="window.open('https://github.com/jaymeetnagar')"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>GED - Web Development<br />B.Tech. Computer Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              UI/UX Designer and Frontend Developer with a strong foundation in design systems, prototyping, and
+responsive web development. Skilled at translating user research into intuitive interfaces using Figma, HTML,
+CSS, and JavaScript. Google UX Certified and experienced in usability testing, accessibility (WCAG 2.1),
+and working within Agile teams. Adept at collaborating cross-functionally with developers, product managers,
+and stakeholders to deliver human-centered design solutions. Seeking to contribute to creative digital teams
+building impactful and inclusive user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
 
-  <script src="main.js"></script>
-</body>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
 
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+    
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jay.nagar109@gmail.com">MAIL</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jaymeetnagar/">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-form-container">
+          <form action="mailto:jay.nagar109@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    
+      
+    </section>
+     -->
+
+     <section id="contact">
+  
+      <h1 class="section-header">Lets Get in touch</h1>
+      
+      <div class="contact-wrapper">
+      
+      <!-- Left contact page --> 
+        
+        <form id="contact-form" class="form-horizontal" role="form">
+           
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+    
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+          
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          
+          </button>
+          
+        </form>
+        
+      <!-- Right contact page --> 
+        
+          <div class="direct-contact-container">
+    
+            <ul class="contact-list">
+              <li class="list-item">
+                <i class="fa fa-map-marker fa-2x">
+                  <span class="contact-text place">Cambridge, Ontario</span></i></li>
+              
+              <li class="list-item">
+                <i class="fa fa-phone fa-2x">
+                  <span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(647) 894-4723</a></span></i></li>
+              
+              <li class="list-item">
+                <i class="fa fa-envelope fa-2x">
+                  <span class="contact-text gmail"><a href="mailto:#" title="Send me an email">Jay.nagar109@gmail.com</a></span></i></li>              
+            </ul>
+    
+            <hr>
+            <ul class="social-media-list">
+              <li><a href="https://github.com/jaymeetnagar"  class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-codepen" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/jaymeetnagar/" class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://www.instagram.com/jaymeet.nagar/profilecard/?igsh=aXY1OWo1aDZyaDlw" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>   
+                  
+            </ul>
+            <hr>
+          </div>
+      </div>
+      
+    </section>  
+      
+      
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jaymeet Nagar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
